@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket View-GUI</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../sockjs.min.js"></script>
+    <script src="../stomp.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div class="container" id="main-content">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket connection:</label>
+                    <button class="btn btn-default" id="connect" type="submit">Connect</button>
+                    <button class="btn btn-default" disabled="disabled" id="disconnect" type="submit">Disconnect
+                    </button>
+                </div>
+                <label for="userID"></label>
+                <input class="form-control" id="userID" type="number" value="99">
+            </form>
+        </div>
+        <div class="col-md-6">
+            <p>Control me</p>
+            <form class="form-inline">
+                <button class="btn btn-default" id="up" type="submit">Up</button>
+                <button class="btn btn-default" id="down" type="submit">Down</button>
+                <button class="btn btn-default" id="left" type="submit">Left</button>
+                <button class="btn btn-default" id="right" type="submit">Right</button>
+                <button class="btn btn-default" id="volUp" type="submit">VolUp</button>
+                <button class="btn btn-default" id="volDown" type="submit">VolDown</button>
+                <button class="btn btn-default" id="mute" type="submit">Mute</button>
+                <button class="btn btn-default" id="action" type="submit">Action</button>
+                <button class="btn btn-default" id="back" type="submit">Back</button>
+                <button class="btn btn-default" id="forth" type="submit">Forth</button>
+                <button class="btn btn-default" id="chatView" type="submit">ChatView</button>
+                <button class="btn btn-default" id="recipeView" type="submit">RecipeView</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="view">
+            <table class="table table-striped">
+                <tbody id="viewBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

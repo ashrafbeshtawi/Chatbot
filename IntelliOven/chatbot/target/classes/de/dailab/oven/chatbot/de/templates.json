@@ -1,0 +1,4 @@
+{
+	"relativeDay": "heute{day=TODAY} | morgen{day=TOMORROW} | übermorgen{day=DAY_AFTER_TOMORROW}",
+	"weekday": "montag{weekday=MONDAY}|dienstag{weekday=TUESDAY}|mittwoch{weekday=WEDNESDAY}|donnerstag{weekday=THURSDAY}|freitag{weekday=FRIDAY}|samstag{weekday=SATURDAY}|sonntag{weekday=SUNDAY}"
+}

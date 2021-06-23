@@ -1,0 +1,9 @@
+[
+	{
+		"pattern": "(başka|farklı|alternatif) bir (tarif|yemek tarifi|yemek) (önerisi|tavsiyesi)? (/istiyoru./|göster|gösterir misin|söyle|söyler misin|öner|önerir misin|önerebilir misin) lütfen?"
+	},
+	{
+		"pattern": "(başka|farklı|alternatif) bir (tarif|yemek) (önerisi|tavsiyesi)? istiyorum"
+	}
+]
+

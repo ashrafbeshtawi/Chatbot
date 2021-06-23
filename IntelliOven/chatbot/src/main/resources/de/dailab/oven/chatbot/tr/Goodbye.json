@@ -1,0 +1,23 @@
+[
+	{
+		"pattern": "(görüşürüz|kendine iyi bak|bay|bay bay|iyi günler|iyi akşamlar|iyi geceler|güle güle|sonra görüşürüz)",
+		"samples": [
+			{
+				"sample": "görüşürüz"
+			},
+			{
+				"sample": "kendine iyi bak"
+			},
+			{
+				"sample": "iyi akşamlar"
+			},
+			{
+				"sample": "güle güle"
+			},
+			{
+				"sample": "sonra görüşürüz"
+			}
+		]
+	}
+]
+

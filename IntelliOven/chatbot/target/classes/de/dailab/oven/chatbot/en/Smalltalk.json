@@ -1,0 +1,39 @@
+[
+	{
+		"pattern": "(thank you (very much)?|thanks){action=ThankYou}",
+		"samples": [
+			{
+				"sample": "Thanks!"
+			},
+			{
+				"sample": "Thank You"
+			},
+			{
+				"sample": "Thank you very much"
+			}
+		]
+	},
+	{
+		"pattern": "(how old are you|how about your age|what is your age|when you have been born){action=HowOldAreYou}",
+		"samples": [
+			{
+				"sample": "How old are you?"
+			},
+			{
+				"sample": "What is your age?"
+			}
+		]
+	},
+	{
+		"pattern": "(do you have a name|what s your name|what is your name){action=WhatsYourName}",
+		"samples": [
+			{
+				"sample": "What's your name?"
+			},
+			{
+				"sample": "what is your name"
+			}
+		]
+	}
+]
+

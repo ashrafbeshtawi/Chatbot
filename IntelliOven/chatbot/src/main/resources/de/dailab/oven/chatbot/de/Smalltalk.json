@@ -1,0 +1,46 @@
+[
+	{
+		"pattern": "(danke|vielen dank|dankeschön|danke dir|ich danke dir|wir danken dir){action=ThankYou}",
+		"samples": [
+			{
+				"sample": "Danke",
+				"entities": { "action": "ThankYou" }
+			},
+			{
+				"sample": "Vielen dank",
+				"entities": { "action": "ThankYou" }
+			},
+			{
+				"sample": "Dankeschön!",
+				"entities": { "action": "ThankYou" }
+			}
+		]
+	},
+	{
+		"pattern": "(wie alt (bist du|sind sie)|wie lange gibt es dich schon|wann wurdest du geboren){action=HowOldAreYou}",
+		"samples": [
+			{
+				"sample": "Wie alt bist du?",
+				"entities": { "action": "HowOldAreYou" }
+			},
+			{
+				"sample": "Wann wurdest du geboren?",
+				"entities": { "action": "HowOldAreYou" }
+			}
+		]
+	},
+	{
+		"pattern": "(wie heißt du|wie ist dein name|welchen namen hast du|wie (soll|darf) ich dich nennen|wie (soll|darf) ich dich (anreden|ansprechen)){action=WhatsYourName}",
+		"samples": [
+			{
+				"sample": "Wie heißt du?",
+				"entities": { "action": "WhatsYourName" }
+			},
+			{
+				"sample": "Wie soll ich dich ansprechen?",
+				"entities": { "action": "WhatsYourName" }
+			}
+		]
+	}
+]
+

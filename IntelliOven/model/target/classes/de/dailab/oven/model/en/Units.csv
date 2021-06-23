@@ -1,0 +1,24 @@
+TEASPOON;teaspoon;teaspoons;tsp
+TABLESPOON;spoon;spoons;tbs;tbsp;tbl;tablespoon;tablespoons
+FLUIDOUNCE;fluidounce;fluidounce;fl oz;floz;fluid ounce
+CUP;cup;cups;c
+CAN;can;can
+PINT;pint;pint;pt;p
+QUART;quart;quart;qt;q
+GALON;galon;galon;gal
+LITERS;liter;liters;lt;liters;l;litre;litres
+MILLILITERS;milliliter;milliliters;ml;millilitre;millilitres
+DECILITER;deciliter;deciliters;dl;decilitre;decilitres
+GRAM;gram;gram;g;gr
+OUNCE;ounce;ounces;oz
+POUND;pound;pounds;lb
+MILLIGRAM;milligram;milligram;mg
+KILOGRAM;kilogram;kilogram;kg
+INCH;inch;inches;in
+MILLIMETER;millimeter;millimeter;mm;millimetre
+CENTIMETER;centimeter;centimeter;cm;centimetre
+DECIMETER;decimeter;decimeter;dm;decimetre
+METER;meter;meter;m;metre
+PIECES;piece;pieces;pcs;pcs.
+KCAL;kilocalorie;kilocalories;kcal
+UNDEF;;;

@@ -1,0 +1,172 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>de.dailab.brain4x</groupId>
+		<artifactId>brain4x</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>tts</artifactId>
+	<packaging>jar</packaging>
+	<name>TTS</name>
+	
+	<properties>
+	</properties>
+	
+	<dependencies>
+	
+		<dependency>
+			<groupId>de.dailab.brain4x</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+        <!-- MaryTTS -->
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>marytts-runtime</artifactId>
+			<version>5.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpcore</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>marytts-client</artifactId>
+			<version>5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>marytts-lang-de</artifactId>
+			<version>5.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>marytts-lang-en</artifactId>
+			<version>5.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>voice-bits1-hsmm</artifactId>
+			<version>5.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>de.dfki.mary</groupId>
+			<artifactId>voice-dfki-prudence-hsmm</artifactId>
+			<version>5.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.3</version>
+		</dependency>
+		-->
+
+	</dependencies>
+
+	<build>
+		<plugins>
+		
+			<!--
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.2</version>
+				<configuration>
+					<finalName>tts-test</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+					<archive>
+						<manifest>
+							<mainClass>zone.bot.vici.tts.Test</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+									</excludes>
+								</filter>
+							</filters>
+							<transformers>
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			-->
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${java.encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin> 
+				<artifactId>maven-javadoc-plugin</artifactId> 
+				<executions> 
+					<execution> 
+						<id>attach-javadocs</id>
+						<phase>package</phase>
+						<goals><goal>jar</goal></goals> 
+					</execution> 
+				</executions> 
+			</plugin>
+						
+		</plugins>
+	</build>
+	
+	
+	<repositories>
+		<repository>
+				<id>marytts</id>
+				<name>spring-plugins-release</name>
+				<url>https://repo.spring.io/plugins-release/</url>
+		</repository>
+	</repositories>
+  
+</project>
+

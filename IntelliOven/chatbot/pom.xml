@@ -1,0 +1,202 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.dailab.oven</groupId>
+        <artifactId>intellioven</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>chatbot</artifactId>
+    <packaging>jar</packaging>
+    <name>Chatbot</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <junit.jupiter.version>5.5.2</junit.jupiter.version>
+        <junit.platform.version>1.5.2</junit.platform.version>
+        <mockito.version>3.3.3</mockito.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.dailab.oven</groupId>
+            <artifactId>database</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.dailab.oven</groupId>
+            <artifactId>controller</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.dailab.brain4x</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dailab.brain4x</groupId>
+            <artifactId>tts</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dailab.brain4x.pattern</groupId>
+            <artifactId>parser</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dailab.brain4x.pattern</groupId>
+            <artifactId>matcher</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+			<groupId>de.dailab.oven</groupId>
+			<artifactId>recipe_services</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>de.dailab.oven.devices</groupId>
+			<artifactId>oven-simulator</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.dailab.brain4x</groupId>
+            <artifactId>chatbot-test</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- MaryTTS Languages/Voices -->
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>marytts-lang-de</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>marytts-lang-en</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>marytts-lang-tr</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>voice-bits1-hsmm</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>voice-dfki-ot-hsmm</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.dfki.mary</groupId>
+            <artifactId>voice-dfki-prudence-hsmm</artifactId>
+            <version>5.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                            <transformers>
+								<!--
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.handlers</resource>
+                                </transformer>
+                                <transformer
+                                        implementation="org.springframework.boot.maven.PropertiesMergingResourceTransformer">
+                                    <resource>META-INF/spring.factories</resource>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.schemas</resource>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>de.dailab.oven.api.Application</mainClass>
+                                </transformer>
+								-->
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <repositories>
+        <repository>
+            <id>marytts</id>
+            <name>spring-plugins-release</name>
+            <url>https://repo.spring.io/plugins-release/</url>
+        </repository>
+    </repositories>
+
+</project>

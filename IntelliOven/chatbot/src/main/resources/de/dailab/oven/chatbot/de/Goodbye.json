@@ -1,0 +1,20 @@
+[
+	{
+		"pattern": "(danke|vielen dank|(ich danke|wir danken) dir)? (tschüss|tschau|ciao|auf wiedersehen|lebewohl|bis später)",
+		"samples": [
+			{
+				"sample": "vielen dank, bis später!"
+			},
+			{
+				"sample": "tschüss"
+			},
+			{
+				"sample": "bis später"
+			},
+			{
+				"sample": "Auf wiedersehen!"
+			}
+		]
+	}
+]
+

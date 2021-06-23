@@ -1,0 +1,25 @@
+[
+	{
+		"pattern": "yes{response=YES} please?",
+		"samples": [
+			{
+				"sample": "yes"
+			},
+			{
+				"sample": "yes please"
+			}
+		]
+	},
+	{
+		"pattern": "no{response=NO} (thanks|thank you)?",
+		"samples": [
+			{
+				"sample": "no"
+			},
+			{
+				"sample": "no thanks"
+			}
+		]
+	}
+]
+

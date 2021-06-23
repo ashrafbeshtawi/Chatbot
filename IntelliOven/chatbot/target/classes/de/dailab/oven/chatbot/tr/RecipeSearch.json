@@ -1,0 +1,25 @@
+[
+	{
+		"pattern": "(ben|biz|bana|bize)? (içinde|içerisinde|elimdeki)? ((_{IngredExc} (sız|siz|suz|süz|hariç|olmayan|olmayıp|içermeyen|içermeyip|geçmeyen|geçmeyip|kullanmayarak|kullanmayan|kullanmayıp))? (ve|ama)? _{IngredInc}?) (lı|li|lu|lü|ile (birlikte|ilgili)?|kullanan|kullanarak|içeren|geçen|olan) bir? /(yemek|tarif.?|yemeğ.?)/ tarifi? (bul|yap|sahip ol|ye|hazırla|pişir)? (mayı|meyi|mak|mek)? /(((öner|göster|söyle.?)((ebil)?ir misin)?)|tercih ederi.|(görmek )?ist(eri.|iyoru.))/ lütfen? ((ama|ve|sadece|yalnızca|ayrıca)? (içinde|içerisinde)? (_{IngredInc} /(istem(iyoru.|em|eyiz)|olmasın|geçmesin)/))? ((ama|ve|sadece|yalnızca|ayrıca) (sadece|yalnızca)? (_{MaxTimeHours} (saat|saatim|saatimiz)|_{MaxTimeMinutes} (dakika|dakikam|dakikamız)) /(zamanım.?.? |vaktim.?.? )?/ var)?",
+		"samples": [
+			{
+				"sample": "tavuk içeren bir yemek istiyorum ama sadece 35 dakikam var",
+				"entities": {
+					"IngredInc": ["tavuk"]
+				}
+			}
+		]
+	},
+	{
+		"pattern": "(ben|biz)? (elimdeki|elimizdeki)? (içinde|içerisinde)? /(((?<ExcludedIngredients>.+) (sız|siz|suz|süz|hariç|olmay(an|ıp)|içermey(en|ip)|geçmey(en|ip)|kullanmay(arak|an|ıp)))? ?(ve |ama )?(?<IncludedIngredients>.+)?)/ /(lı|li|lu|lü|ile( birlikte| ilgili)?|kullana(rak|n)|geçen|içeren|olan) ((ve|ama) (ayrıca |sadece |en fazla )?)?/ (_{MaxTimeHours} (saat|saatte) |_{MaxTimeMinutes} (dakika|dakikada))? /(sürecek şekilde )?(hangi yeme(ği|k(ler(i)?)?)|hangi( yemek)? tarif(i(ni)?|ler(i(ni)?)?)?|hangi(sini|lerini)|ne(ler(i)?|yi)?|ne yemek(ler)?)/ (pişirebilirim|pişirebiliriz|yapabilirim|yapabiliriz|var) ((ama|ve|sadece|yalnızca|ayrıca) (sadece|yalnızca)? (_{MaxTimeHours} (saat|saatim|saatimiz)|_{MaxTimeMinutes} (dakika|dakikam|dakikamız)) /(zamanım.?.? |vaktim.?.? )?/ var)?"
+	},
+	{
+		"pattern": "(ben|biz)? (bir? (yemek|tarif) tarifi?) (hazırlamak|yapmak)? (çok)? /(istiyorum|istiyoruz|isterim|isteriz|hoşum.?.?.? gider)|acıktı.?.?.?.?/"
+	},
+	{
+		"pattern": "(haftalık (tarif|yemek (tarifi)?) planı? (önerir misin|önerebilir misin)? lütfen?){plan=WEEKLY}"
+	},
+	{
+		"pattern": "_{IngredExc}+(ve) (istemiyorum|sevmiyorum|olmasın|hayır){filterUpdateMode=ADD}"
+	}
+]

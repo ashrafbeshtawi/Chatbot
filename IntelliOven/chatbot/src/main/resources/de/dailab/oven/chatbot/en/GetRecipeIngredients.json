@@ -1,0 +1,12 @@
+[
+	{
+		"pattern": "how many ingredients does (the|this|that) (recipe|receipe) (have|contain)"
+	},
+	{
+		"pattern": "(what|which) (ingredients|ingridients)? do (i|one|we) (need|require) to prepare this"
+	},
+	{
+		"pattern": "(what|which) (ingredients|ingridients|stuff|food)? (do i need|do we need|is needed) (to prepare)? (this|that|the)? (recipe|meal|dish)?"
+	}
+]
+

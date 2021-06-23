@@ -1,0 +1,19 @@
+[
+	{
+		"pattern": "((sıradaki|bir sonraki|sonraki){relStep=+1}|(en (son|sonki)|son|az önceki|şimdiki|şuanki){relStep=0}|bir? önceki{relStep=-1}|(son adımdan önceki){relStep=-2}) /adım.? ?(geçer|geç|tekrarlar|tekrarla|söyler|söyle|gösterir|göster)?(ebilir|y.bilir|elim)?( misin| mısın| miyi.)?/ lütfen?"
+	},
+	{
+		"pattern": "(ne yapmalıyım|hangi adımları izlemeliyim|bana? adımları (söyler|söyleyebilir) misin lütfen?|bana? adımları söyle lütfen?|(yemeği|tarifi) nasıl (yapacağım|pişireceğim|hazırlayacağım)|ilk (adım|adıma|adımı)? /(geçer|geç|tekrarlar|tekrarla|söyler|söyle|gösterir|göster)?(ebilir|y.bilir|elim)?( misin| mısın| miyi.)?/ lütfen?)"
+	},
+	{
+		"pattern": "(yemek|yemeği|yemeğin)? (yemek adımları|adımlar neler|tarif adımları|nasıl pişireceğim|nasıl hazırlayacağım)"
+	},
+	{
+		"pattern": "nasıl başlayacağım|nasıl|nasıl yapacağım|hadi başlayalım|başla"
+	}
+]
+
+
+
+
+

@@ -1,0 +1,26 @@
+[
+	{
+		"pattern": "(hey|heya|hi|hello|howdy|hey there){action=Hi}",
+		"samples": [
+			{
+				"sample": "Hey!"
+			},
+			{
+				"sample": "Hello."
+			},
+			{
+				"sample": "hi"
+			}
+		]
+	},
+	{
+		"pattern": "good morning{action=GoodMorning}"
+	},
+	{
+		"pattern": "good afternoon{action=GoodAfternoon}"
+	},
+	{
+		"pattern": "good evening{action=GoodEvening}"
+	}
+]
+

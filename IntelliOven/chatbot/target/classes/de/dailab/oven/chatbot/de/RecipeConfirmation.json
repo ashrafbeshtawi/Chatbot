@@ -1,0 +1,28 @@
+[
+	{
+		"pattern": "ja{response=YES} bitte?",
+		"samples": [
+			{
+				"sample": "ja"
+			},
+			{
+				"sample": "ja bitte"
+			}
+		]
+	},
+	{
+		"pattern": "nein{response=NO} _*",
+		"samples": [
+			{
+				"sample": "Nein"
+			},
+			{
+				"sample": "Nein, danke!"
+			},
+			{
+				"sample": "nein lieber nicht"
+			}
+		]
+	}
+]
+

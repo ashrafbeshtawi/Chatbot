@@ -1,0 +1,4 @@
+{
+	"relativeDay": "today{day=TODAY} | tomorrow{day=TOMORROW} | (on? the day after tomorrow){day=DAY_AFTER_TOMORROW}",
+	"weekday": "monday{weekday=MONDAY}|tuesday{weekday=TUESDAY}|wednesday{weekday=WEDNESDAY}|thursday{weekday=THURSDAY}|friday{weekday=FRIDAY}|saturday{weekday=SATURDAY}|sunday{weekday=SUNDAY}"
+}

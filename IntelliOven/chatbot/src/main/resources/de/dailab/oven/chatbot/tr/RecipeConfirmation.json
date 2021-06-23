@@ -1,0 +1,19 @@
+[
+	{
+		"pattern": "evet{response=YES} lütfen? /(istiyoru.|isteri.)/ lütfen?",
+		"samples": [
+			{
+				"sample": "evet isterim"
+			}
+		]
+	},
+	{
+		"pattern": "hayır{response=NO} /(istemiyoru.|isteme.)/",
+		"samples": [
+			{
+				"sample": "hayır istemem"
+			}
+		]
+	}
+]
+

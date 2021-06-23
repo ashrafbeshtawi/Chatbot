@@ -1,0 +1,62 @@
+[
+	{
+		"pattern": "(ja? ich (bin|ernähre mich) ((vegan|veganer){dietType=VEGAN} | (vegetarisch|vegetarier){dietType=VEGETARIAN})){action=AddDietLabel}",
+		"samples": [
+			{
+				"sample": "Ich bin veganer",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGAN"
+				}
+			},
+			{
+				"sample": "Ich ernähre mich vegan",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGAN"
+				}
+			},
+			{
+				"sample": "Ich bin vegetarier",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGETARIAN"
+				}
+			},
+			{
+				"sample": "Ich ernähre mich vegetarisch",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGETARIAN"
+				}
+			}
+		]
+	},
+	{
+		"pattern": "(ich (bin allergisch gegen|mag keine) _{allergy}+(und)){action=FilterAllergies}",
+		"samples": [
+			{
+				"sample": "Ich bin allergisch gegen Nüsse",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "Nüsse"
+				}
+			},
+			{
+				"sample": "Ich mag keine Zwiebeln",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "Zwiebeln"
+				}
+			},
+			{
+				"sample": "Ich bin allergisch gegen Nüsse und Lactose",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": ["Nüsse", "Lactose"]
+				}
+			}
+		]
+	}
+]
+

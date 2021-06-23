@@ -1,0 +1,14 @@
+[
+	{
+		"pattern": "((was|wie) sind die befehle|(welche|was für) befehle (gibt es|kann ich nutzen)|bitte? (helf|hilf) (mir|uns)){action=Help}",
+		"samples": [
+			{
+				"sample": "Bitte hilf mir"
+			},
+			{
+				"sample": "welche befehle gibt es?"
+			}
+		]
+	}
+]
+

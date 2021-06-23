@@ -1,0 +1,44 @@
+[
+	{
+		"pattern": "(hi|hallo|hallöchen|hallöle|tach|guten tag|tag|hey){action=Hi}",
+		"samples": [
+			{
+				"sample": "Hey!"
+			},
+			{
+				"sample": "Hallo."
+			},
+			{
+				"sample": "hi"
+			}
+		]
+	},
+	{
+		"pattern": "(guten? morgen|moin){action=GoodMorning}",
+		"samples": [
+			{
+				"sample": "moin"
+			},
+			{
+				"sample": "Guten Morgen"
+			}
+		]
+	},
+	{
+		"pattern": "guten nachmittag{action=GoodAfternoon}",
+		"samples": [
+			{
+				"sample": "guten nachmittag"
+			}
+		]
+	},
+	{
+		"pattern": "guten abend{action=GoodEvening}",
+		"samples": [
+			{
+				"sample": "guten abend"
+			}
+		]
+	}
+]
+

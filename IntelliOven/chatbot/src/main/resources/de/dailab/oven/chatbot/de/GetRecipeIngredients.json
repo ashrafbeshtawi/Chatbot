@@ -1,0 +1,9 @@
+[
+	{
+		"pattern": "(wieviele|wie viele) zutaten (enthält|hat) (dieses (rezept|gericht|essen|mahl)|diese (speise|mahlzeit))"
+	},
+	{
+		"pattern": "(welche|was für) zutaten (enthält|hat|benötigt|(brauche|benötige) ich für|(brauchen|benötigen) wir für) (dieses (rezept|gericht|essen|mahl)|diese (speise|mahlzeit))"
+	}
+]
+

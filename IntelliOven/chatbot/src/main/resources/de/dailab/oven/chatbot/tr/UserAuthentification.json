@@ -1,0 +1,36 @@
+[
+	{
+		"pattern": "sesimi kaydetmek istiyorum{action=StartEnrollment}",
+		"samples": [
+			{
+				"sample": "sesimi kaydetmek istiyorum"
+			}
+		]
+	},
+	{
+		"pattern": "abort{action=AbortEnrollment}",
+		"samples": [
+			{
+				"sample": "abort"
+			}
+		]
+	},
+	{
+		"pattern": "(sesimi kaydetmek istemiyorum|sesimi kaydetmekten vazgeçtim){action=AbortEnrollment}",
+		"samples": [
+			{
+				"sample": "sesimi kaydetmek istemiyorum"
+			},{
+				"sample": "sesimi kaydetmekten vazgeçtim"
+			}
+		]
+	},
+	{
+		"pattern": "(ok|voice training completed){action=CompleteEnrollment}",
+		"samples": [
+			{
+				"sample": "voice training completed"
+			}
+		]
+	}
+]

@@ -1,0 +1,104 @@
+[
+	{
+		"pattern": "i (would like to|like to|love to|prefere to|want to|want) (have a recipe for something|have a recipe|find a recipe for something|find a recipe|eat something|prepare a meal|something|prepare something|cook something) ((with _{IngredInc}+(and{ConjIngredInc=AND}|or{ConjIngredInc=OR})) | (but? without _{IngredExc}+(and|or)) | (within (_{MaxTimeHours} (hours|hour) and?)? (_{MaxTimeMinutes} (minutes|minute))? ))+ ",
+		"samples": [
+			{
+				"sample": "I would like to cook something with chicken and cheese but without onions",
+				"entities": {
+					"IngredInc": ["chicken", "cheese"],
+					"IngredExc": "onions"
+				}
+			},
+			{
+				"sample": "I like to find a recipe with chicken, cheese and tomatoes within one hour",
+				"entities": {
+					"IngredInc": ["chicken", "cheese", "tomatoes"],
+					"MaxTimeHours": "one"
+				}
+			},
+			{
+				"sample": "I want to cook something with chicken and cheese but without onions and garlic",
+				"entities": {
+					"IngredInc": ["chicken", "cheese"],
+					"IngredExc": ["onions", "garlic"]
+				}
+			}
+		]
+	},
+	{
+		"pattern": "what (recipe|meal)? (can|could) (one|i|we) cook ((with _{IngredInc}+(and{ConjIngredInc=AND}|or{ConjIngredInc=OR})) | (but? without _{IngredExc}+(and|or)) | (within (_{MaxTimeHours} (hours|hour) and?)? (_{MaxTimeMinutes} (minutes|minute))? ))+",
+		"samples": [
+			{
+				"sample": "what meal can I cook within 20 minutes?",
+				"entities": { 
+					"MaxTimeMinutes": "20"
+				}
+			},
+			{
+				"sample": "What recipe could I cook with chicken within twenty minutes",
+				"entities": {
+					"IngredInc": "chicken",
+					"MaxTimeMinutes": "twenty"
+				}
+			}
+		]
+	},
+	{
+		"pattern": "(we need|i need|please give me|please show me|show me|give me|i want) (a recipe|a receipe) ((with _{IngredInc}+(and{ConjIngredInc=AND}|or{ConjIngredInc=OR})) | (but? without _{IngredExc}+(and|or)) | (within (_{MaxTimeHours} (hours|hour) and?)? (_{MaxTimeMinutes} (minutes|minute))? ))+",
+		"samples": [
+			{
+				"sample": "Please give me a recipe with chicken and cheese but without onions",
+				"entities": {
+					"IngredInc": ["chicken", "cheese"],
+					"IngredExc": "onions"
+				}
+			},
+			{
+				"sample": "I need a recipe with chicken, cheese and tomatoes within 1 hour and 15 minutes",
+				"entities": {
+					"IngredInc": ["chicken", "cheese", "tomatoes"],
+					"MaxTimeHours": "1",
+					"MaxTimeMinutes": "15"
+				}
+			},
+			{
+				"sample": "I want a recipe with chicken and cheese but without onions and garlic",
+				"entities": {
+					"IngredInc": ["chicken", "cheese"],
+					"IngredExc": ["onions", "garlic"]
+				}
+			}
+		]
+	},
+	{
+		"pattern": "(i|we|one) ((want|would)? (like|love)? to?|prefere to) (prepare|cook|eat|cooking) (something|a recipe|a meal)",
+		"samples": [
+			{
+				"sample": "I would like to cook something"
+			},
+			{
+				"sample": "I want to prepare a recipe"
+			},
+			{
+				"sample": "I love cooking a meal"
+			}
+		]
+	},
+	{
+		"pattern": "can you recommend me a (weekly cooking plan){plan=WEEKLY}|give me a (weekly plan){plan=WEEKLY}",
+		"samples": [
+			{
+				"sample": "can you recommend me a weekly cooking plan",
+				"entities": { "plan": "WEEKLY" }
+			},
+			{
+				"sample": "give me a weekly plan",
+				"entities": { "plan": "WEEKLY" }
+			}
+		]
+	},
+	{
+		"pattern": "i (do not|don t|dont|neither) (want|like) _{IngredExc}+(and|or|nor){filterUpdateMode=ADD}"
+	}
+]
+

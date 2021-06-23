@@ -1,0 +1,23 @@
+[
+	{
+		"pattern": "kannst du bitte? den (aktuellen{relStep=0}|letzten{relStep=0}|vorletzten{relStep=-1}|vorvorletzten{relStep=-2})? schritt wiederholen"
+	},
+	{
+		"pattern": "was war nochmal? der (aktuelle{relStep=0}|letzte{relStep=0}|vorletzte{relStep=-1}|vorvorletzte{relStep=-2}) schritt"
+	},
+	{
+		"pattern": "(ok|okay)? (was ist der)? (nächste|nächster|nächsten){relStep=+1} schritt"
+	},
+	{
+		"pattern": "(ok|okay)? was ist als nächstes{relStep=+1} dran"
+	},
+	{
+		"pattern": "was muss ich (machen|tun|tuen)|wie gehe ich vor|(was|wie) sind die schritte|bitte? (sag|sage) mir die schritte|wie (koche ich|kochen wir) (dieses (gericht|rezept|mahl|essen)|diese speise)|wie (bereite ich|bereiten wir) (dieses (gericht|rezept|mahl|essen)|diese speise) zu"
+	},
+	{
+		"pattern": "anleitung|schritte|wie ist die anleitung (für dieses (rezept|essen|mahl|gericht))?"
+	},
+	{
+		"pattern": "lass uns (starten|loslegen|anfangen)|wie geht es los|wie (starte ich|starten wir)|wie (fange ich|fangen wir) an"
+	}
+]

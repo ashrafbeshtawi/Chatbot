@@ -1,0 +1,33 @@
+[
+	{
+		"pattern": "(heize (den ofen{device=OVEN})? auf /\\d+/{tempSetpoint} grad celsius? vor?){action=PreheatOven}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "((mache|schalte) das (ofenlicht{device=OVEN}|licht) (im ofen{device=OVEN})? (an{state=ON}|ein{state=ON}|aus{state=OFF})){action=SwitchOvenLight}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "((mache|schalte) den ofen aus){action=TurnOvenOff}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "((setze|stelle) die temperatur auf /\\d+/{tempSetpoint} grad celsius?){action=SetProgram}",
+		"samples": [
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+

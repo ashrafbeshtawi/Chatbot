@@ -1,0 +1,14 @@
+{
+  "localGraph" :
+  {
+    "uri" : "bolt://localhost:7687",
+    "user" : "neo4j",
+    "password" : "aal2019"
+  },
+  "remoteGraph" :
+  {
+    "uri" : "bolt://130.149.154.16:7689",
+    "user" : "neo4j",
+    "password" : "ArcelikOven123"
+  }
+}

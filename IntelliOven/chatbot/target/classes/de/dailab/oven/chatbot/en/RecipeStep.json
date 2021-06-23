@@ -1,0 +1,27 @@
+[
+	{
+		"pattern": "(ok|okay)? (what is the)? next{relStep=+1} step? please?"
+	},
+	{
+		"pattern": "(can you)? go (a step back){relStep=-1} please?"
+	},
+	{
+		"pattern": "(can|could) you repeat the (current{relStep=0}|last{relStep=0}|previous{relStep=-1}|((step|one) before the previous){relStep=-2})? step again? please?"
+	},
+	{
+		"pattern": "what was the (current{relStep=0}|last{relStep=0}|previous{relStep=-1}|((step|one) before the previous){relStep=-2}) step again?"
+	},
+	{
+		"pattern": "(ok|okay)? (repeat the)? (current{relStep=0}|last{relStep=0}|previous{relStep=-1}|((step|one) before the previous){relStep=-2}) step again? please?"
+	},
+	{
+		"pattern": "what do i have to do|what are the needed steps|tell me the steps|please tell me the steps|how do i cook this meal|how do i cook the dish|how do i prepare the meal|how do i cook the receipe"
+	},
+	{
+		"pattern": "receipe steps|what are the steps|recipe steps|how to cook it|how to prepare the meal"
+	},
+	{
+		"pattern": "how to start|how to|how to do|how|let us start|let s start"
+	}
+]
+

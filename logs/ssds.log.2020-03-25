@@ -1,0 +1,8 @@
+2020-03-25 08:56:25,595 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE
+2020-03-25 08:56:25,604 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE
+2020-03-25 12:39:45,907 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE
+2020-03-25 12:39:45,917 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE
+2020-03-25 13:07:24,608 [nboundChannel-9] ERROR marytts.JPhonemiser            272 - Problem with token <(> []: Cannot syllabify empty phone string
+2020-03-25 13:07:24,618 [nboundChannel-9] ERROR marytts.JPhonemiser            272 - Problem with token <)> []: Cannot syllabify empty phone string
+2020-03-25 13:14:51,557 [boundChannel-12] ERROR marytts.JPhonemiser            272 - Problem with token <&> []: Cannot syllabify empty phone string
+2020-03-25 13:35:43,498 [boundChannel-75] ERROR marytts.JPhonemiser            272 - Problem with token <&> []: Cannot syllabify empty phone string

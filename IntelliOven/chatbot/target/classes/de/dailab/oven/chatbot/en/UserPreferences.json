@@ -1,0 +1,55 @@
+[
+	{
+		"pattern": "(yes? i (m|am) a? (vegetarian{dietType=VEGETARIAN}|vegan{dietType=VEGAN})){action=AddDietLabel}",
+		"samples": [
+			{
+				"sample": "I am vegan",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGAN"
+				}
+			},
+			{
+				"sample": "I am vegetarian",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGETARIAN"
+				}
+			},
+			{
+				"sample": "I am a vegetarian",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGETARIAN"
+				}
+			}
+		]
+	},
+	{
+		"pattern": "(i ((m|am) allergic to | (don t|dont) like) _{allergy}+(and)){action=FilterAllergies}",
+		"samples": [
+			{
+				"sample": "I am allergic to nuts",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "nuts"
+				}
+			},
+			{
+				"sample": "I dont like onions",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "onions"
+				}
+			},
+			{
+				"sample": "I am allergic to nuts and lactose",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": ["nuts", "lactose"]
+				}
+			}
+		]
+	}
+]
+

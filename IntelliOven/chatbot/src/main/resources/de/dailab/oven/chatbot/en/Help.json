@@ -1,0 +1,20 @@
+[
+	{
+		"pattern": "((what are the commands _+|(what|which) commands can i use (_*)|please? help (me|us)|how can (i|we) talk to you|what can (i|we) say to you) (please)?){action=Help}",
+		"samples": [
+			{
+				"sample": "what are the commands I can use?"
+			},
+			{
+				"sample": "what commands can I use"
+			},
+			{
+				"sample": "what can I say to you"
+			},
+			{
+				"sample": "how can I talk to you"
+			}
+		]
+	}
+]
+

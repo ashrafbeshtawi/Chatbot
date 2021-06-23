@@ -1,0 +1,2 @@
+2020-03-25 13:13:46,638 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE
+2020-03-25 13:13:46,647 [main           ] WARN  marytts.TextToMaryXML          129 - Locale is null, overriding with de_DE

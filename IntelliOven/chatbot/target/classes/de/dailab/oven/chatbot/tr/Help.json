@@ -1,0 +1,11 @@
+[
+	{
+		"pattern": "(/(sana |size )?(ne |hangi )?(kullanabileceğim |söyleyebileceğim )?(komutlar|talimatlar|şeyler)(ı|i)? (ne|hangi)?(ler(dir|idir|i)?)? ?(sana|size)? ?(söyle|kullan)?(malıyı.|meliyi.|abiliri.|abiliri.|yebiliri.)? ?(sana|size)? ?(lütfen)? ?(yardım)?/){action=Help}",
+		"samples": [
+			{
+				"sample": "kullanabileceğim komutlar neler"
+			}
+		]
+	}
+]
+

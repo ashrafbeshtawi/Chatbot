@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <File name="Logfile" fileName="IntelliOven.log" immediateFlush="false" append="false">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+            <AppenderRef ref="Logfile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+
+        <Logger name="de.dailab" level="debug">
+        </Logger>
+        <Logger name="zone.bot.vici" level="debug">
+        </Logger>
+
+        <Logger name="org.springframework" level="warn">
+        </Logger>
+
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,11 @@
+[
+	{
+		"pattern": "how is the weather (~relativeDay | on ~weekday)? (in _*{location})?"
+	},
+	{
+		"pattern": "how (hot|warm|cold){type=TEMPERATURE} will it be (~relativeDay | on ~weekday)? (in _*{location})?"
+	},
+	{
+		"pattern": "will it rain{type=RAIN} (~relativeDay | on ~weekday)? (in _*{location})?"
+	}
+]

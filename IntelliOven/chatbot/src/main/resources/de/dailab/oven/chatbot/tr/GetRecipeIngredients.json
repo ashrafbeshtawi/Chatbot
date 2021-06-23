@@ -1,0 +1,12 @@
+[
+	{
+		"pattern": "bu? tarifin? (içeriği|içerikleri|malzemeleri) (ne|neler)|ihtiyacım olan malzemeler neler|neye ihtiyacım var|malzemeler (ne|neler)"
+	},
+	{
+		"pattern": "(hangi|ne) malzemelere ihtiyacım var"
+	},
+	{
+		"pattern": "/(yemeği hazırlamak için)?.?(neye|nelere|neler|ne|hangi).?(malzemeler.|içerikler.|şey|yemek)?.?(ihtiyacım var|ihtiyacımız var|gerekli)/"
+	}
+]
+

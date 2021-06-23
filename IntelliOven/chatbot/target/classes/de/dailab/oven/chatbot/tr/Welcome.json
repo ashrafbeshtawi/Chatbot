@@ -1,0 +1,40 @@
+[
+	{
+		"pattern": "(hey|selam|merhaba|meraba|iyi günler){action=Hi}",
+		"samples": [
+			{
+				"sample": "Hey!"
+			},
+			{
+				"sample": "Selam"
+			},
+			{
+				"sample": "merhaba"
+			}
+		]
+	},
+	{
+		"pattern": "günaydın{action=GoodMorning}",
+		"samples": [
+			{
+				"sample": "günaydın"
+			}
+		]
+	},
+	{
+		"pattern": "tünaydın{action=GoodAfternoon}",
+		"samples": [
+			{
+				"sample": "tünaydın"
+			}
+		]
+	},
+	{
+		"pattern": "iyi akşamlar{action=GoodEvening}",
+		"samples": [
+			{
+				"sample": "iyi akşamlar"
+			}
+		]
+	}
+]

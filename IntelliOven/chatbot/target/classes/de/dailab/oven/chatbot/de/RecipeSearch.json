@@ -1,0 +1,78 @@
+[
+	{
+		"pattern": "(bitte)? (gib|gebe|finde|zeige|suche) (uns|mir)? ein (rezept|gericht) dass _{IngredInc}+(und{ConjIngredInc=AND}|oder{ConjIngredInc=OR}) (aber (kein|keine|keinen) _{IngredExc}+(und|oder))? (enthält|beinhaltet)",
+		"samples": [
+			{
+				"sample": "Bitte zeige mir ein Rezept, dass Tomaten und Gurken, aber keine Zwiebeln beinhaltet.",
+				"entities": { 
+					"ConjIngredInc": "AND",
+					"IngredInc": ["Tomaten", "Gurken"],
+					"IngredExc": "Zwiebeln"
+				}
+			},
+			{
+				"sample": "Suche ein Rezept dass Hühnchen, Tomaten und Käse enthält",
+				"entities": { 
+					"ConjIngredInc": "AND",
+					"IngredInc": ["Hühnchen", "Tomaten", "Käse"]
+				}
+			},
+			{
+				"sample": "Finde mir ein Gericht, dass Hühnchen oder Pute aber keinen Knoblauch oder Zwiebeln enthält",
+				"entities": { 
+					"ConjIngredInc": "OR",
+					"IngredInc": ["Hühnchen", "Pute"],
+					"IngredExc": ["Knoblauch", "Zwiebeln"]
+				}
+			}
+		]
+	},
+	{
+		"pattern": "ich ((möchte|will|würde) (gern|gerne)? (etwas|essen|ein (gericht|rezept))? (essen|kochen|zubereiten)|habe hunger)|wir (haben hunger | (möchten|wollen|würden) (gern|gerne)? ((etwas|essen|ein (gericht|rezept|zubereiten)))? (essen|kochen))",
+		"samples": [
+			{
+				"sample": "wir haben hunger"
+			},
+			{
+				"sample": "Ich möchte etwas essen"
+			},
+			{
+				"sample": "ich würde gerne etwas kochen"
+			},
+			{
+				"sample": "ich will ein gericht kochen"
+			}
+		]
+	},
+	{
+		"pattern": "bitte? schlage mir ein (rezept|gericht) vor | (kannst|würdest) du (mir|uns) ein (rezept|gericht) (empfehlen|vorschlagen) | (schlag|schlage|empfehle) mir ein rezept vor? | was (kann|soll) ich kochen",
+		"samples": [
+			{
+				"sample": "Bitte schlage mir ein Rezept vor"
+			},
+			{
+				"sample": "Kannst du mir ein Rezept empfehlen"
+			},
+			{
+				"sample": "Was soll ich kochen?"
+			}
+		]
+	},
+	{
+		"pattern": "kannst du mir einen wochenplan{plan=WEEKLY} empfehlen|mach mir einen wochenplan{plan=WEEKLY}",
+		"samples": [
+			{
+				"sample": "kannst du mir einen wochenplan empfehlen",
+				"entities": { "plan": "WEEKLY" }
+			},
+			{
+				"sample": "mach mir einen wochenplan",
+				"entities": { "plan": "WEEKLY" }
+			}
+		]
+	},
+	{
+		"pattern": "ich (mag|möchte|will) (kein|keine|weder) _{IngredExc}+(und|oder|noch){filterUpdateMode=ADD}"
+	}
+]
+

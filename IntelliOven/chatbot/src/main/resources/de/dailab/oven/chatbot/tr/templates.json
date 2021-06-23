@@ -1,0 +1,3 @@
+{
+	"relativeDay": "bugün{day=TODAY}|yarın{day=TOMORROW}|(yarından sonraki gün){day=DAY_AFTER_TOMORROW}"
+}

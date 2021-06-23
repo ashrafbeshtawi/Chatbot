@@ -1,0 +1,17 @@
+[
+	{
+		"pattern": "bu? (yemeği|tarifi) (iyi{rating=7}|(çok iyi){rating=9}|kötü{rating=2}|(çok kötü){rating=0}|güzel{rating=7}|(çok güzel){rating=9}|mükemmel{rating=9}|ortalama{rating=5}|normal{rating=5}|/[0-9]|10/{rating}) (olarak|şeklinde) (değerlendirmek|eleştirmek|oylamak) /istiyoru..?.?.?/",
+		"samples": [
+			{
+				"sample": "tarifi 5 olarak oylamak istiyorum"
+			}
+		]
+	},
+	{
+		"pattern": "(bu|tavsiye edilen|önerilen)? (yemek tarifi?|tarif) ((çok iyi){rating=9}|iyi{rating=7}|kötü{rating=2}|(çok kötü){rating=0}|güzel{rating=7}|(çok güzel){rating=9}|mükemmel{rating=9}|ortalama{rating=5}|normal{rating=5}) bir? (yemekti|tarifti|ti|tı|dı|di)?"
+	},
+	{
+		"pattern": "bu? (yemeği|tarifi|yemekten|tariften)? (beğendim{rating=7}|sevdim{rating=7}|hoşlandım{rating=7}|beğenmedim{rating=2}|sevmedim{rating=2})"
+	}
+]
+

@@ -1,0 +1,8 @@
+[
+	{
+		"pattern": "~relativeDay (hava sıcaklığı?|sıcaklık)? (ne kadar (sıcak|ılık|soğuk)?|kaç derece|nasıl) olacak?"
+	},
+	{
+		"pattern": "~relativeDay yağmur{type=RAIN} yağacak mı"
+	}
+]

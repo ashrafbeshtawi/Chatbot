@@ -1,0 +1,6 @@
+[
+	{
+		"pattern": "(yemeği|tarifi)? (hazırlamak|yapmak|pişirmek)? için? (ne kadar|kaç dakika|kaç saat) (sürer|sürecek|(zaman|zamanımı|zamanımızı|vakit|vaktimi|vaktimizi) alır|(zaman|vakit)? gerekli)"
+	}
+]
+

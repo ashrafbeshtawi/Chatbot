@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.dailab.brain4x</groupId>
+	<artifactId>brain4x</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Brain4X</name>
+
+	<modules>
+		<module>common</module>
+		<module>chatbot-test</module>
+		<module>tts</module>
+		<module>pattern</module>
+	</modules>
+	
+	<properties>
+		<java.encoding>utf-8</java.encoding>
+		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<slf4j.version>1.7.28</slf4j.version>
+		<findbugs.version>3.0.2</findbugs.version>
+		<!-- Sonar -->
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.jacoco.reportPath>${project.basedir}/../../target/jacoco.exec</sonar.jacoco.reportPath>
+	</properties>
+
+	
+	<dependencies>
+	
+		<!-- Nullity Annotations -->
+		<dependency>
+			<groupId>com.google.code.findbugs</groupId>
+			<artifactId>jsr305</artifactId>
+			<version>${findbugs.version}</version>
+		</dependency>
+	
+		<!-- Logger -->
+	    <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+        </dependency>
+	
+		<!-- Testing -->
+	  	<dependency>
+	  		<groupId>junit</groupId>
+	  		<artifactId>junit</artifactId>
+	  		<version>${junit.version}</version>
+	  		<scope>test</scope>
+	  	</dependency>
+		
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${java.encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin> 
+				<artifactId>maven-javadoc-plugin</artifactId> 
+				<configuration> 
+      				<source>8</source> 
+    			</configuration>
+				<executions> 
+					<execution> 
+						<id>attach-javadocs</id>
+						<phase>package</phase>
+						<goals><goal>jar</goal></goals>
+						<configuration> <!-- add this to disable checking -->
+                            <doclint>none</doclint>
+                        </configuration>
+					</execution> 
+				</executions> 
+			</plugin>
+			<!-- needed to recognize junit5 tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.5</version>
+				<configuration>
+					<destFile>${sonar.jacoco.reportPath}</destFile>
+					<append>true</append>
+				</configuration>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-check</id>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<limits>
+										<limit>
+											<minimum>0.0</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>brain4x-snapshots</id>
+			<name>Brain4X Snapshots</name>
+			<url>http://brain4x-dev.aot.tu-berlin.de:8081/repository/brain4x-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+</project>
+

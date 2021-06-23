@@ -1,0 +1,22 @@
+[
+	{
+		"pattern": "(preheat (the oven{device=OVEN})? to /\\d+/{tempSetpoint} degrees){action=PreheatOven}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "(turn the oven{device=OVEN}? light (on{state=ON}|off{state=OFF})){action=SwitchOvenLight}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "(turn (the oven{device=OVEN})? off){action=TurnOvenOff}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "(set the? temperature to /\\d+/{tempSetpoint} degrees){action=SetProgram}",
+		"samples": [
+		]
+	}
+]

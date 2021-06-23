@@ -1,0 +1,50 @@
+[
+	{
+		"pattern": "(teşekkür ederim|teşekkür){action=ThankYou}",
+		"samples": [
+			{
+				"sample": "teşekkür ederim"
+			},
+			{
+				"sample": "Teşekkür!"
+			}
+		]
+	},
+	{
+		"pattern": "(kaç yaşındasın|yaşın kaç|ne zaman doğdun){action=HowOldAreYou}",
+		"samples": [
+			{
+				"sample": "kaç yaşındasın"
+			},
+			{
+				"sample": "yaşın kaç"
+			},
+			{
+				"sample": "ne zaman doğdun"
+			}
+		]
+	},
+	{
+		"pattern": "(ismin ne|adın ne){action=WhatsYourName}",
+		"samples": [
+			{
+				"sample": "ismin ne"
+			},
+			{
+				"sample": "adın ne"
+			}
+		]
+	},
+	{
+		"pattern": "(nasılsın|naber){action=HowAreYou}",
+		"samples": [
+			{
+				"sample": "naber?"
+			},
+			{
+				"sample": "nasılsın"
+			}
+		]
+	}
+]
+

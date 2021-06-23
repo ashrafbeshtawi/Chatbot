@@ -1,0 +1,23 @@
+[
+	{
+		"pattern": "wie (ist|wird) das wetter (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})?"
+	},
+	{
+		"pattern": "wie (heiß|warm|kalt|kühl){type=TEMPERATURE} (ist|wird|soll) es (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})? werden?"
+	},
+	{
+		"pattern": "wieviel grad{type=TEMPERATURE} celsius? (sind|werden|sollen) es (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})? werden?"
+	},
+	{
+		"pattern": "regnet{type=RAIN} es (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})?"
+	},
+	{
+		"pattern": "(wird|soll) es (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})? regnen{type=RAIN}"
+	},
+	{
+		"pattern": "wie hoch ist die (regenwahrscheinlichkeit|regen wahrscheinlichkeit|wahrscheinlichkeit für regen){type=RAIN} (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})?"
+	},
+	{
+		"pattern": "wie hoch ist die wahrscheinlichkeit dass es (~relativeDay | am? ~weekday)? ((in|im|auf) der? _*{location})? regnet{type=RAIN}"
+	}
+]

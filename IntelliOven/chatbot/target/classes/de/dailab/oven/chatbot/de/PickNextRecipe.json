@@ -1,0 +1,9 @@
+[
+	{
+		"pattern": "(ich (mag|will|möchte)|wir (mögen|wollen|möchten)) (das|dieses) (ausgewählte|vorgeschlagene)? (rezept|gericht) nicht"
+	},
+	{
+		"pattern": "bitte? empfehle (mir|uns) bitte? (ein anderes (gericht|rezept))|(ich würde|wir würden) (gerne|gern)? (ein anderes (rezept|gericht)|etwas anderes) (kochen|zubereiten)"
+	}
+]
+

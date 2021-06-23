@@ -1,0 +1,23 @@
+[
+	{
+		"pattern": "(thanks|thank you)? (bye|byebye|bye bye|see ya later?|cu|see you later?|goodbye|good bye)",
+		"samples": [
+			{
+				"sample": "thanks, bye"
+			},
+			{
+				"sample": "byebye"
+			},
+			{
+				"sample": "cu"
+			},
+			{
+				"sample": "see you later"
+			},
+			{
+				"sample": "goodbye"
+			}
+		]
+	}
+]
+

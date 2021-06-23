@@ -1,0 +1,12 @@
+[
+	{
+		"pattern": "(i|we) (want|would prefer|wish to have|would like to have|would like to get) (a different|a new|an alternative) (recipe|recommendation|meal|dish)"
+	},
+	{
+		"pattern": "(pls|please|we|I)? (recommend|suggest|would like to have|would like to get|would like to cook) (something different|a different meal|a different recipe|a different dish|an alternative recipe)"
+	},
+	{
+		"pattern": "(i|we)? (do not|don t) (like|want) (this|the) (suggested|recommended)? (recipe|meal|dish)?"
+	}
+]
+

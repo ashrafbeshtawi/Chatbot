@@ -1,0 +1,138 @@
+ID;DBID;NAME;ART;CATEGORY;METRIK;SYNONYMS
+4;GCAL;Energie (Kilokalorien);Nu;Zusammensetzung;kCal/100g;Kalorien, Energie, Energie in Kilokalorien
+5;GJ;Energie (Kilojoule);Nu;Zusammensetzung;kJ/100g;Energie in Joule
+6;ZW;Wasser, berechnet;Nu;Zusammensetzung;mg;Wasser
+7;ZE;Eiweiß (Protein);Nu;Zusammensetzung;mg/100g;Eiweis, Eiweiß, Protein
+8;ZF;Fett;Nu;Zusammensetzung;mg/100g;Fett
+9;ZK;Kohlenhydrate, resorbierbar;Nu;Zusammensetzung;mg/100g;Kohlenhydrate
+10;ZB;Ballaststoffe;Nu;Zusammensetzung;mg/100g;
+11;ZM;Mineralstoffe (Rohasche);Nu;Zusammensetzung;mg/100g;Mineralstoffe, Rohasche
+12;ZO;Organische Säuren;Nu;Zusammensetzung;mg/100g;
+13;ZA;Alkohol (Ethanol);Nu;Zusammensetzung;mg/100g;Alkohol, Ethanol
+14;VA;Vitamin A-Retinoläquivalent;Nu;Vitamine;µg/100g;Vitamin A, Retinoläquivalent
+15;VAR;Vitamin A-Retinol;Nu;Vitamine;µg/100g;Vitamin A, Retinol
+16;VAC;Vitamin A-Beta-Carotin;Nu;Vitamine;µg/100g;Vitamin A, Beta-Carotin
+17;VD;Vitamin D-Calciferole;Nu;Vitamine;µg/100g;Vitamin D, Calciferole
+18;VE;Vitamin E-Tocopheroläquivalent;Nu;Vitamine;µg/100g;Vitamin E, Tocopheroläquivalent
+19;VEAT;Vitamin E-Alpha-Tocopherol;Nu;Vitamine;µg/100g;Vitamin E, Alpha-Tocopherol
+20;VK;Vitamin K-Phyllochinon;Nu;Vitamine;µg/100g;Vitamin K, Phyllochinon
+21;VB1;Vitamin B1-Thiamin;Nu;Vitamine;µg/100g;Vitamin B1, Thiamin
+22;VB2;Vitamin B2-Riboflavin;Nu;Vitamine;µg/100g;Vitamin B2, Riboflavin
+23;VB3;Vitamin B3-Niacin, Nicotinsäure;Nu;Vitamine;µg/100g;Vitamin B3, Niacin, Nicotinsäure
+24;VB3A;Vitamin B3-Niacinäquivalent;Nu;Vitamine;µg/100g;Vitamin B3, Niacinäquivalent
+25;VB5;Vitamin B5-Pantothensäure;Nu;Vitamine;µg/100g;Vitamin B5-Pantothensäure
+26;VB6;Vitamin B6-Pyridoxin;Nu;Vitamine;µg/100g;Vitamin B6, Pyridoxin
+27;VB7;Vitamin B7-Biotin (Vitamin H);Nu;Vitamine;µg/100g;Vitamin B7, Biotin (Vitamin H)
+28;VB9G;Vitamin B9-gesamte Folsäure;Nu;Vitamine;µg/100g;Vitamin B9, gesamte Folsäure,Folsäure
+29;VB12;Vitamin B12-Cobalamin;Nu;Vitamine;µg/100g;Vitamin B12, Cobalamin
+30;VC;Vitamin C-Ascorbinsäure;Nu;Vitamine;µg/100g;Vitamin C, Ascorbinsäure
+31;MNA;Natrium;Nu;Mineralstoffe;mg/100g;
+32;MK;Kalium;Nu;Mineralstoffe;mg/100g;
+33;MCA;Calcium;Nu;Mineralstoffe;mg/100g;Kalzium
+34;MMG;Magnesium;Nu;Mineralstoffe;mg/100g;
+35;MP;Phosphor;Nu;Mineralstoffe;mg/100g;
+36;MS;Schwefel;Nu;Mineralstoffe;mg/100g;
+37;MCL;Chlorid;Nu;Mineralstoffe;mg/100g;
+38;MFE;Eisen;Nu;Spurenelemente;µg/100g;
+39;MZN;Zink;Nu;Spurenelemente;µg/100g;
+40;MCU;Kupfer;Nu;Spurenelemente;µg/100g;
+41;MMN;Mangan;Nu;Spurenelemente;µg/100g;
+42;MF;Fluorid;Nu;Spurenelemente;µg/100g;
+43;MJ;Iodid;Nu;Spurenelemente;µg/100g;
+44;KAM;Mannit;Nu;Kohlenhydrate;mg/100g;
+45;KAS;Sorbit;Nu;Kohlenhydrate;mg/100g;
+46;KAX;Xylit;Nu;Kohlenhydrate;mg/100g;
+47;KA;Summe Zuckeralkohole;Nu;Kohlenhydrate;mg/100g;Zuckeralkohole
+48;KMT;Glucose (Traubenzucker);Nu;Kohlenhydrate;mg/100g;Glucose, Traubenzucker
+49;KMF;Fructose (Fruchtzucker);Nu;Kohlenhydrate;mg/100g;Fructose, Fruchtzucker
+50;KMG;Galactose (Schleimzucker);Nu;Kohlenhydrate;mg/100g;Galactose, Schleimzucker
+51;KM;Monosaccharide (1 M);Nu;Kohlenhydrate;mg/100g;Monosaccharide, 1M
+52;KDS;Saccharose (Rübenzucker);Nu;Kohlenhydrate;mg/100g;Saccharose, Rübenzucker
+53;KDM;Maltose (Malzzucker);Nu;Kohlenhydrate;mg/100g;Maltose, Malzzucker
+54;KDL;Lactose (Milchzucker);Nu;Kohlenhydrate;mg/100g;Lactose, Milchzucker
+55;KD;Disaccharide (2 M);Nu;Kohlenhydrate;mg/100g;Disaccharide, 2M
+56;KMD;Zucker (gesamt);Nu;Kohlenhydrate;mg/100g;Zucker
+57;KPOR;Oligosaccharide;Nu;Kohlenhydrate;mg/100g;Oligosaccharide, resorbierbar (3 - 9 M)
+58;KPON;Oligosaccharide, nicht resorbierbar;Nu;Kohlenhydrate;mg/100g;Oligosaccharide
+59;KPG;Glykogen (tierische Stärke);Nu;Kohlenhydrate;mg/100g;Glykogen, tierische Stärke
+60;KPS;Stärke;Nu;Kohlenhydrate;mg/100g;
+61;KP;Polysaccharide (> 9 M);Nu;Kohlenhydrate;mg/100g;
+62;KBP;Poly-Pentosen;Nu;Ballaststoffe;mg/100g;
+63;KBH;Poly-Hexosen;Nu;Ballaststoffe;mg/100g;
+64;KBU;Poly-Uronsäure;Nu;Ballaststoffe;mg/100g;
+65;KBC;Cellulose;Nu;Ballaststoffe;mg/100g;
+66;KBL;Lignin;Nu;Ballaststoffe;mg/100g;
+67;KBW;Wasserlösliche Ballaststoffe;Nu;Ballaststoffe;mg/100g;Ballaststoffe
+68;KBN;Wasserunlösliche Ballaststoffe;Nu;Ballaststoffe;mg/100g;Ballaststoffe
+69;EILE;Isoleucin;Nu;Aminosäuren;mg/100g;
+70;ELEU;Leucin;Nu;Aminosäuren;mg/100g;
+71;ELYS;Lysin;Nu;Aminosäuren;mg/100g;
+72;EMET;Methionin;Nu;Aminosäuren;mg/100g;
+73;ECYS;Cystein;Nu;Aminosäuren;mg/100g;
+74;EPHE;Phenylalanin;Nu;Aminosäuren;mg/100g;
+75;ETYR;Tyrosin;Nu;Aminosäuren;mg/100g;
+76;ETHR;Threonin;Nu;Aminosäuren;mg/100g;
+77;ETRP;Tryptophan;Nu;Aminosäuren;mg/100g;
+78;EVAL;Valin;Nu;Aminosäuren;mg/100g;
+79;EARG;Arginin;Nu;Aminosäuren;mg/100g;
+80;EHIS;Histidin;Nu;Aminosäuren;mg/100g;
+81;EEA;Essentielle Aminosäuren;Nu;Aminosäuren;mg/100g;
+82;EALA;Alanin;Nu;Aminosäuren;mg/100g;
+83;EASP;Asparaginsäure;Nu;Aminosäuren;mg/100g;
+84;EGLU;Glutaminsäure;Nu;Aminosäuren;mg/100g;
+85;EGLY;Glycin;Nu;Aminosäuren;mg/100g;
+86;EPRO;Prolin;Nu;Aminosäuren;mg/100g;
+87;ESER;Serin;Nu;Aminosäuren;mg/100g;
+88;ENA;Nichtessentielle Aminosäuren;Nu;Aminosäuren;mg/100g;
+89;EH;Harnsäure;Nu;Aminosäuren;mg/100g;
+90;EP;Purin Nu 3;Nu;Aminosäuren;mg/100g;
+91;F40;Butansäure/Buttersäure;Nu;Fett;mg/100g;
+92;F60;Hexansäure/Capronsäure;Nu;Fett;mg/100g;
+93;F80;Octansäure/Caprylsäure;Nu;Fett;mg/100g;
+94;F100;Decansäure/Caprinsäure;Nu;Fett;mg/100g;
+95;F120;Dodecansäure/Laurinsäure;Nu;Fett;mg/100g;
+96;F140;Tetradecansäure/Myristinsäure;Nu;Fett;mg/100g;
+97;F150;Pentadecansäure;Nu;Fett;mg/100g;
+98;F160;Hexadecansäure/Palmitinsäure;Nu;Fett;mg/100g;
+99;F170;Heptadecansäure;Nu;Fett;mg/100g;
+100;F180;Octadecansäure/Stearinsäure;Nu;Fett;mg/100g;
+101;F200;Eicosansäure/Arachinsäure;Nu;Fett;mg/100g;
+102;F220;Decosansäure/Behensäure;Nu;Fett;mg/100g;
+103;F240;Tetracosansäure/Lignocerinsäure;Nu;Fett;mg/100g;
+104;FS;Gesättigte Fettsäuren;Nu;Fett;mg/100g;
+105;F141;Tetradecensäure;Nu;Fett;mg/100g;
+106;F151;Pentadecensäure;Nu;Fett;mg/100g;
+107;F161;Hexadecensäure/Palmitoleinsäure;Nu;Fett;mg/100g;Hexadecensäure, Palmitoleinsäure
+108;F171;Heptadecensäure;Nu;Fett;mg/100g;
+109;F181;Octadecensäure/Ölsäure;Nu;Fett;mg/100g;Octadecensäure, Ölsäure
+110;F201;Eicosensäure;Nu;Fett;mg/100g;
+111;F221;Decosensäure/Erucasäure;Nu;Fett;mg/100g;Decosensäure, Erucasäure
+112;F241;Tetracosensäure /Nervonsäure;Nu;Fett;mg/100g;Tetracosensäure, Nervonsäure
+113;FU;Einfach ungesättigte Fettsäuren;Nu;Fett;mg/100g;ungesättigte Fettsäuren
+114;F162;Hexadecadiensäure;Nu;Fett;mg/100g;
+115;F164;Hexadecatetraensäure;Nu;Fett;mg/100g;
+116;F182;Octadecadiensäure/Linolsäure;Nu;Fett;mg/100g;Octadecadiensäure, Linolsäure
+117;F183;Octadecatriensäure/Linolensäure;Nu;Fett;mg/100g;Octadecatriensäure, Linolensäure
+118;F184;Octradecatetraensäure/Stearidonsäure;Nu;Fett;mg/100g;Octradecatetraensäure, Stearidonsäure
+119;F193;Nonadecatriensäure;Nu;Fett;mg/100g;
+120;F202;Eicosadiensäure;Nu;Fett;mg/100g;
+121;F203;Eicosatriensäure;Nu;Fett;mg/100g;
+122;F204;Eicosatetraensäure/Arachidonsäure;Nu;Fett;mg/100g;Eicosatetraensäure, Arachidonsäure
+123;F205;Eicosapentaensäure;Nu;Fett;mg/100g;
+124;F222;Docosadiensäure;Nu;Fett;mg/100g;
+125;F223;Docosatriensäure;Nu;Fett;mg/100g;
+126;F224;Docosatetraensäure;Nu;Fett;mg/100g;
+127;F225;Docosapentaensäure;Nu;Fett;mg/100g;
+128;F226;Docosahexaensäure;Nu;Fett;mg/100g;
+129;FP;Mehrfach ungesättigte Fettsäuren;Nu;Fett;mg/100g;
+130;FK;Kurzkettige Fettsäuren;Nu;Fett;mg/100g;
+131;FM;Mittelkettige Fettsäuren;Nu;Fett;mg/100g;
+132;FL;Langkettige Fettsäuren;Nu;Fett;mg/100g;
+133;FO3;Omega-3-Fettsäuren;Nu;Fett;mg/100g;Omega 3
+134;FO6;Omega-6-Fettsäuren;Nu;Fett;mg/100g;Omega 6
+135;FG;Glycerin und Lipoide;Nu;Fett;mg/100g;Glycerin, Lipoide
+136;FC;Cholesterin;Nu;Fett;mg/100g;
+137;GFPS;P/S Verhältnis;Nu;Gesamt;;
+138;GKB;Broteinheiten;Nu;Gesamt;BE;
+139;GMKO;Gesamt-Kochsalz;Nu;Gesamt;mg/100g;Salz, Kochsalz
+140;GP;mittlere Portionsgröße;Nu;Gesamt;g/Port;

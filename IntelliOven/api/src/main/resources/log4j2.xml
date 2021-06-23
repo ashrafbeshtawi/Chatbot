@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36}:%L - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <File name="Logfile" fileName="IntelliOven.log" immediateFlush="false" append="false">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </File>
+        <Gelf name="Graylog" host="udp:130.149.154.13" port="12201" version="1.1" extractStackTrace="true"
+              filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192"
+              originHost="%host{simple}"
+              additionalFieldTypes="osArch=String,osName=String,osVersion=String,
+                    application=String,component=String,
+                    buildVersion=String,buildTime=String,branch=String,commitID=String">
+            <Field name="timestamp" pattern="%d{dd MMM yyyy HH:mm:ss,SSS}"/>
+            <Field name="level" pattern="%-5level"/>
+            <Field name="marker" pattern="%marker" />
+            <Field name="simpleClassName" pattern="%C{1}"/>
+            <Field name="className" pattern="%C"/>
+            <Field name="server" pattern="%host{simple}"/>
+            <Field name="sourceIp" pattern="%host{address}"/>
+            <Field name="osArch" pattern="${sys:os.arch}"/>
+            <Field name="osName" pattern="${sys:os.name}"/>
+            <Field name="osVersion" pattern="${sys:os.version}"/>
+            <Field name="application" literal="IntelliOven"/>
+            <Field name="component" literal="Java-Backend"/>
+            <Field name="buildVersion" pattern="${sys:backend.build.version}"/>
+            <Field name="buildTime" pattern="${sys:backend.build.time}"/>
+            <Field name="branch" pattern="${sys:backend.branch}"/>
+            <Field name="commitID" pattern="${sys:backend.commit.id.abbrev}"/>
+        </Gelf>
+        <Gelf name="Logstash" host="udp:130.149.154.13" port="12202" version="1.1" extractStackTrace="true"
+              filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192"
+              originHost="%host{simple}"
+              additionalFieldTypes="osArch=String,osName=String,osVersion=String,
+                    application=String,component=String,
+                    buildVersion=String,buildTime=String,branch=String,commitID=String">
+            <Field name="timestamp" pattern="%d{dd MMM yyyy HH:mm:ss,SSS}"/>
+            <Field name="level" pattern="%-5level"/>
+            <Field name="simpleClassName" pattern="%C{1}"/>
+            <Field name="className" pattern="%C"/>
+            <Field name="server" pattern="%host{simple}"/>
+            <Field name="sourceIp" pattern="%host{address}"/>
+            <Field name="osArch" pattern="${sys:os.arch}"/>
+            <Field name="osName" pattern="${sys:os.name}"/>
+            <Field name="osVersion" pattern="${sys:os.version}"/>
+            <Field name="application" literal="IntelliOven"/>
+            <Field name="component" literal="Java-Backend"/>
+            <Field name="buildVersion" pattern="${sys:backend.build.version}"/>
+            <Field name="buildTime" pattern="${sys:backend.build.time}"/>
+            <Field name="branch" pattern="${sys:backend.branch}"/>
+            <Field name="commitID" pattern="${sys:backend.commit.id.abbrev}"/>
+        </Gelf>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Logfile"/>
+            <AppenderRef ref="Graylog"/>
+            <AppenderRef ref="Logstash"/>
+        </Root>
+
+        <Logger name="de.dailab" level="debug">
+        </Logger>
+        <Logger name="zone.bot.vici" level="debug">
+        </Logger>
+
+        <Logger name="org.springframework" level="warn">
+        </Logger>
+
+
+    </Loggers>
+
+</Configuration>

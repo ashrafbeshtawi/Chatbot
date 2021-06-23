@@ -1,0 +1,38 @@
+[
+	{
+		"pattern": "((fırını|fırın sıcaklığını|fırının sıcaklığını)? (/\\d+/|_+){tempSetpoint} dereceye önceden (ayarlar|ayarlaır|ayarlair|getirr|getirır|getirir|ısıtr|ısıtır|ısıtir) (mısın|misin)? lütfen?){action=PreheatOven}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "((fırının|fırın)? (ışığı|ışığını) (yak|yakar mısın|aç|açar mısın){state=ON} lütfen?){action=SwitchOvenLight}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "(fırını? (kapat|kapatır mısın|kapatr mısın|kapan|kapanır mısın|kapanr mısın) lütfen?){action=TurnOvenOff}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "((fırını|fırın sıcaklığını|fırının sıcaklığını)? (/\\d+/|_+){tempSetpoint} dereceye (ayarla|ayarlar|ayarlaır|ayarlair|getir|getirır|getirir|ısıt|ısıtr|ısıtır|ısıtir) (mısın|misin)? lütfen?){action=SetProgram}",
+		"samples": [
+			{
+				"sample": "fırını 200 dereceye ayarla"
+			}
+		]
+	},
+	{
+		"pattern": "((fırının|fırın)? (ışığı|ışığını) (kapat|kapatır mısın|kapatür müsün|söndür|söndürır mısın|söndürür müsün){state=OFF} lütfen?){action=SwitchOvenLight}",
+		"samples": [
+		]
+	},
+	{
+		"pattern": "(ızgara{ovenProgram=FULL_GRILL} moduna getir){action=SetProgram}",
+		"samples": [
+			{
+				"sample": "ızgara moduna getir"
+			}
+		]
+	}
+]

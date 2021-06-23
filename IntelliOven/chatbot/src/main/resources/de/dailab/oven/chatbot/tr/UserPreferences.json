@@ -1,0 +1,55 @@
+[
+	{
+		"pattern": "(vejeteryanım{dietType=VEGETARIAN}|veganım{dietType=VEGAN}){action=AddDietLabel}",
+		"samples": [
+			{
+				"sample": "veganım",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGAN"
+				}
+			},
+			{
+				"sample": "vejeteryanım",
+				"entities": { 
+					"action": "AddDietLabel",
+					"dietType": "VEGETARIAN"
+				}
+			}
+		]
+	},
+	{
+		"pattern": "((_{allergy} (a|e)?)+(ve) (alerjim var)){action=FilterAllergies}",
+		"samples": [
+			{
+				"sample": "nuts alerjim var",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "nuts"
+				}
+			},
+			{
+				"sample": "onions e alerjim var",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "onions"
+				}
+			},
+			{
+				"sample": "onions a alerjim var",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": "onions"
+				}
+			},
+			{
+				"sample": "nuts a ve onions a alerjim var",
+				"entities": { 
+					"action": "FilterAllergies",
+					"allergy": ["nuts", "onions"]
+				}
+			}
+		]
+	}
+]
+
